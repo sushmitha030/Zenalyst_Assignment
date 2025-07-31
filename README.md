@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# 📊 Customer Revenue Analysis Dashboard (Zenalyst Technical Assessment)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed as part of the **Zenalyst Technical Assessment**. It consists of both frontend and backend components that together provide interactive **Q3 and Q4 financial analysis** at the **customer, region, and country levels**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧩 Features
 
-### `npm start`
+### ✅ Backend (Node.js + Express + MongoDB)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* API endpoints to fetch:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  * Customer-level revenue and growth data
+  * Regional revenue comparisons
+  * Country-wise quarterly analysis
+* Percentage variance calculation between Q3 and Q4
+* Support for dynamic filters (by region, country, min/max revenue, etc.)
 
-### `npm test`
+### ✅ Frontend (React + Chart.js + MUI)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Interactive data visualizations (Bar charts, Pie charts)
+* Filterable tables and graphs for deep-dives into:
 
-### `npm run build`
+  * Customer performance
+  * Regional financial trends
+  * Country-level revenue contributions
+* Responsive design for seamless experience across devices
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 How to Run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/sushmitha030/Zenalyst_Assignment.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Backend Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd backend
+npm install
+.env - I have added my local DB connection URL
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Frontend Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd ../frontend
+npm install
+npm start
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📂 Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+├── backend/         # Node.js Express APIs
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   └── config/
+├── frontend/        # React frontend with charts and UI
+│   ├── components/
+│   ├── App.js
+│   └── index.js
+└── README.md
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📈 Analysis Focus
 
-### Analyzing the Bundle Size
+This dashboard provides insights into:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* **Financial growth** between **Quarter 3 and Quarter 4**
+* **Percentage of variance** for each customer
+* **Aggregate trends** at **regional and country** levels
+* **Top-performing** and **underperforming** segments
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛠️ Tech Stack
 
-### Advanced Configuration
+* **Frontend:** React, Chart.js, Material UI (MUI), Axios
+* **Backend:** Node.js, Express.js, MongoDB
+* **Data Visualization:** Chart.js (Bar & Pie charts)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## ✍️ Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project was built by **Sushmitha Kandula** as part of the **Zenalyst Technical Assessment**.
+Feel free to reach out or explore more of my work!
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let me know if you want this personalized with your GitHub link or your full name.
